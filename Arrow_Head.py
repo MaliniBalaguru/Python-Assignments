@@ -11,9 +11,9 @@ while i <= n:
     x += 1
     i += 1
 
-for odd_counter in odd_numbers:
+for number in odd_numbers:
     output = " "
-    for count in range(odd_counter):
+    for count in range(number):
         output += "x"
     print(output.center(max(odd_numbers)))
 
