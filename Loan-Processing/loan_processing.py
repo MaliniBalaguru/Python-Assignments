@@ -7,8 +7,6 @@ def process_loan():
     cust_name = input("Enter customer name: ")
     req_loan = int(input("Enter requested loan amount: "))
     credit_score = int(input("Enter credit score: "))
-
-
 # Look up meta data based on customer information
     for criteria_dict in Meta_Data.metadata():
         if req_loan <= criteria_dict["loan"] and criteria_dict["cs_start"] <= credit_score <= criteria_dict["cs_end"]:
