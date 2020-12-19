@@ -1,0 +1,7 @@
+def disemvowel(string):
+    '''This function removes all vowels in a given string except y'''
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    for letter in string:
+        if letter in vowels:
+            string = string.replace(letter, "")
+    return string
